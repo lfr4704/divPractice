@@ -1,0 +1,19 @@
+@media screen and (max-width:400px){
+
+  body{
+    background-color: blue;
+  }
+
+}
+
+@media screen and (min-width:800px){
+
+  body{
+    background-color: green;
+  }
+
+}
+
+#fakeid p {
+  color: white;
+}
