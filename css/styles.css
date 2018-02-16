@@ -1,6 +1,22 @@
 /*google fonts link*/
 @import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded');
 
+@media screen and (max-width:400px){
+
+  body{
+    background-color: blue;
+  }
+
+}
+
+@media screen and (min-width:800px){
+
+  body{
+    background-color: green;
+  }
+
+}
+
 #header{
   width: 100%;
   height: 100px;
@@ -42,4 +58,38 @@
 
 #navigation a:hover{
   color: hotpink;
+}
+
+.photos {
+  margin; 20px 0px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 150px 150px;
+  grid-gap: 5px;
+}
+
+.photos > div {
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photos > div.a {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.photos > div.b {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.photos > div.c {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.photos > div.d {
+  grid-column: 2;
+  grid-row: 2;
 }

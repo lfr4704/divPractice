@@ -60,3 +60,38 @@ body {
 #navigation a:hover{
   color: hotpink;
 }
+
+.photos {
+  marigin; 20px 0;
+  display: grid;
+  grid-template-columns: 33% 33% 33%
+  grid-template-rows: 150px 150px;
+  grid-gap: 5px;
+}
+
+
+.photos > div {
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.photos >div.a {
+  grid-column: 1/ span 2;
+}
+
+.photos > div.b {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.photos > div.c {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.photos > div.d {
+  grid-column: 2;
+  grid-row: 2;
+}
