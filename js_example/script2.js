@@ -18,10 +18,24 @@ for (i = 0; i < 20; i++) {
 	for (e = 0; e < 10; e++) {
 		console.log("inner loop");
 	}
-}*/
+}
 
 var myfirstArray = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 
 myfirstArray[3] = "does not exist"; //this is how you change existing data from array.
 
+myfirstArray.push("extra day");
+
 var mycurrentday = myfirstArray[3];  //this is how you pull data from array.
+
+for (var i = 0; i < 10; i++) {
+	console.log(myfirstArray[i]);
+}
+*/
+
+var newArray = ["1", "2", "3", "4", "5"];
+
+for (i=0; i < newArray.length; i++) {
+	console.log(newArray[i]);
+}
+
