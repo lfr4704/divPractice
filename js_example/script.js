@@ -25,14 +25,11 @@ if ( false ) {
 
 var count = 0;
 var firstLine = "*"
-while ( count < 20) {
-	
-	firstLine = firstLine + "*";
 
-	if (count % 2 === 1) {
-		firstLine = firstLine + " "
-	}
+while ( count < 20 ) {
 
-	count++
 	console.log(firstLine);
+	firstLine = firstLine + "*";
+	count++
+	
 }
