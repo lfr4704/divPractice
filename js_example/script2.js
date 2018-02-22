@@ -50,13 +50,16 @@ while ( x < 20 ) {
 	x++;
 }
 
-var z =y.split('');
+var z =y.split(''); // this converts the lat while loop iteration into an array
 
+//this for loop pops the last item of the array, then converts the array into string and finally removes the "," and joins the string.
 for(i = z.length; i >= 0; i--) {
 	z.pop();
 	z.toString();
 	console.log(z.join(""));
 }
+
+
 
 
 
@@ -76,4 +79,12 @@ if (number1 < number2) {
 
 for (i = 0; i < 10; i++) {
 	console.log('hello');
+}
+
+if (letter1 != letter2) {
+	console.log("this is false");
+
+	if (number1 != number2) {
+		console.log("this is also false");
+	}
 }
