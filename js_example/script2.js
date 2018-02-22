@@ -1,4 +1,5 @@
 
+/*
 var number1 = 0;
 var number2 = 10;
 var letter1 = "a";
@@ -41,6 +42,7 @@ for (var i = 0; i < newArray.length; i++) {
 
 */
 
+/*
 var x = 0;
 var y = "*";
 
@@ -68,6 +70,7 @@ for(i = z.length; i >= 0; i--) {
 	number1++;
 }*/
 
+/*
 console.log(letter1);
 console.log(letter2);
 
@@ -98,3 +101,12 @@ if (number1 > number2) {
 	}
 }
 
+var otherArray = [number1, number2, letter1, letter2, compOperator];
+console.log(otherArray);
+*/
+function newFunction() {
+	console.log("I ran a function");
+}
+
+newFunction();
+newFunction();
