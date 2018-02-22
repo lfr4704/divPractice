@@ -35,7 +35,7 @@ for (var i = 0; i < 10; i++) {
 
 var newArray = ["1", "2", "3", "4", "5"];
 
-for (i=0; i < newArray.length; i++) {
+for (var i = 0; i < newArray.length; i++) {
 	console.log(newArray[i]);
 }
 
@@ -88,3 +88,13 @@ if (letter1 != letter2) {
 		console.log("this is also false");
 	}
 }
+
+// this is an example of a nested loop that will not run because the if statement is false.
+if (number1 > number2) {
+	 console.log("these numbers are equal now");
+
+	for (var i = 0; i < 18; i++) {
+		number1 = number1 + 1;
+	}
+}
+
