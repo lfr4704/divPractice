@@ -50,21 +50,30 @@ while ( x < 20 ) {
 	x++;
 }
 
-var z =y.split(" ");
+var z =y.split('');
 
-while (x > 0) {
-	console.log(z[z.pop()]);
-	x--;
+for(i = z.length; i >= 0; i--) {
+	z.pop();
+	z.toString();
+	console.log(z.join(""));
 }
 
 
 
-for (i = 0; i < 10; i++) {
+/*for (i = 0; i < 10; i++) {
 	console.log(number1);
 	number1++;
-}
+}*/
 
 console.log(letter1);
 console.log(letter2);
 
 console.log(letter1 + " " + letter2);
+
+if (number1 < number2) {
+	console.log("true");
+}
+
+for (i = 0; i < 10; i++) {
+	console.log('hello');
+}
