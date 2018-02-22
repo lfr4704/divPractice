@@ -31,7 +31,7 @@ var mycurrentday = myfirstArray[3];  //this is how you pull data from array.
 for (var i = 0; i < 10; i++) {
 	console.log(myfirstArray[i]);
 }
-*/
+
 
 var newArray = ["1", "2", "3", "4", "5"];
 
@@ -39,3 +39,32 @@ for (i=0; i < newArray.length; i++) {
 	console.log(newArray[i]);
 }
 
+*/
+
+var x = 0;
+var y = "*";
+
+while ( x < 20 ) {
+	console.log(y);
+	y = y + "*";
+	x++;
+}
+
+var z =y.split(" ");
+
+while (x > 0) {
+	console.log(z[z.pop()]);
+	x--;
+}
+
+
+
+for (i = 0; i < 10; i++) {
+	console.log(number1);
+	number1++;
+}
+
+console.log(letter1);
+console.log(letter2);
+
+console.log(letter1 + " " + letter2);
