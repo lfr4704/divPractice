@@ -103,13 +103,69 @@ function print(text) {
 
 print("Hello World!");
 
-*/
+
 
 //DON is Document Object Model
 
+// this is how to add a p tag inot html dinamically
+var niceDay = '<p>Today\'s weather is really nice!</p>';
+var badDay = '<p>Today\'s weather is really bad!</p>';
 
-document.getElementById("test");
+
+day = prompt("type 'sunny' or 'rainy'");
+
+if (day == "rainy") {
+
+document.getElementById("test").innerHTML = badDay;
+
+} else if (day == "sunny") {
+	document.getElementById("test").innerHTML = niceDay;
+}
+
 
 var name = 10;
 
 console.log(`the number is ${name}`); //use the symbol above the tab key " ` " to be able to use interpolation in javascript. interpolation is what is inside the ${ }
+*/
+/*
+var firstNumber = prompt("type in the first number");
+
+firstNumber = parseInt(firstNumber);
+
+var secondNumber = prompt("type in second number");
+
+secondNumber = parseInt(secondNumber);
+
+var thirdNumber = firstNumber * secondNumber;
+
+console.log(thirdNumber);
+
+document.getElementById("test").innerHTML = "<h1>" + thirdNumber + "</h1>";
+
+*/
+
+// this code below does the same as the code above. 
+/*
+function myFunction(firstNumber, secondNumber) {
+
+	firstNumber = parseInt(firstNumber);
+	secondNumber = parseInt(secondNumber);
+	thirdNumber = firstNumber * secondNumber;
+	console.log(thirdNumber);
+}
+
+myFunction(prompt("enter first number"), prompt("enter second number"));
+
+document.getElementById("test").innerHTML = "<h1>" + thirdNumber + "</h1>";
+*/
+
+
+//this is to generate a random quote and put it into an html page
+var quotes= ["hello", "world", "my", "yo", "no"];
+
+// this prints a random number from 0 to 0.99
+var randomNumber = Math.random() * 5; 
+
+randomNumber = Math.floor(randomNumber)
+
+document.getElementById("test").innerHTML = quotes[randomNumber];
