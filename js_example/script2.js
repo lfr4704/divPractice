@@ -63,13 +63,6 @@ for(i = z.length; i >= 0; i--) {
 
 
 
-
-
-/*for (i = 0; i < 10; i++) {
-	console.log(number1);
-	number1++;
-}*/
-
 /*
 console.log(letter1);
 console.log(letter2);
@@ -103,10 +96,20 @@ if (number1 > number2) {
 
 var otherArray = [number1, number2, letter1, letter2, compOperator];
 console.log(otherArray);
-*/
-function newFunction() {
-	console.log("I ran a function");
+
+function print(text) {
+	console.log(text);
 }
 
-newFunction();
-newFunction();
+print("Hello World!");
+
+*/
+
+//DON is Document Object Model
+
+
+document.getElementById("test");
+
+var name = 10;
+
+console.log(`the number is ${name}`); //use the symbol above the tab key " ` " to be able to use interpolation in javascript. interpolation is what is inside the ${ }
