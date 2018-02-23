@@ -164,7 +164,7 @@ document.getElementById("test").innerHTML = "<h1>" + thirdNumber + "</h1>";
 var quotes= ["hello", "world", "my", "yo", "no"];
 
 // this prints a random number from 0 to 0.99
-var randomNumber = Math.random() * 5; 
+var randomNumber = Math.random() * quotes.length;
 
 randomNumber = Math.floor(randomNumber)
 
