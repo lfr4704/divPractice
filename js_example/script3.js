@@ -54,16 +54,16 @@ console.log(bookCatalog("The old man and the sea", "Ernest Hemingway"));
 
 //4.  this is a function that stores an array inside the function but 
 
-var cities = ["Mexico", "China", "Japan", "South Africa", "Brazil", "Australia", "Croatia", "Cuba"];
-var randomCities = Math.random() * cities.length;
+var cities = [];
+var randomCities;
+
+function multiDestination() {
+	cities = ["Mexico", "China", "Japan", "South Africa", "Brazil", "Australia", "Croatia", "Cuba"];
+	randomCities = Math.random() * cities.length;
 	randomCities = Math.floor(randomCities);
-
-function multiDestination(a,b,c) {
-
-
-	return multiDestination()
+	return cities[randomCities];
 }
-
+multiDestination();
 
 
 
