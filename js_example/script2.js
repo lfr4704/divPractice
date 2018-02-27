@@ -166,6 +166,6 @@ var quotes= ["hello", "world", "my", "yo", "no"];
 // this prints a random number from 0 to 0.99
 var randomNumber = Math.random() * quotes.length;
 
-randomNumber = Math.floor(randomNumber)
+randomNumber = Math.floor(randomNumber);
 
 document.getElementById("test").innerHTML = quotes[randomNumber];

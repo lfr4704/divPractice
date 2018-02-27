@@ -44,7 +44,7 @@ function calculate(action) {
 
 
 //3. this is a simple function that concantenates a book title and author
-function bookCatalog (title,author) {
+function bookCatalog(title,author) {
 
 	return title + ", " + author;
 }
@@ -52,7 +52,18 @@ function bookCatalog (title,author) {
 console.log(bookCatalog("The old man and the sea", "Ernest Hemingway"));
 
 
-//4.  this is a function that that is nested with a for loop
+//4.  this is a function that stores an array inside the function but 
+
+var cities = ["Mexico", "China", "Japan", "South Africa", "Brazil", "Australia", "Croatia", "Cuba"];
+var randomCities = Math.random() * cities.length;
+	randomCities = Math.floor(randomCities);
+
+function multiDestination(a,b,c) {
+
+
+	return multiDestination()
+}
+
 
 
 
