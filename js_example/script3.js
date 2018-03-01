@@ -52,18 +52,28 @@ function bookCatalog(title,author) {
 console.log(bookCatalog("The old man and the sea", "Ernest Hemingway"));
 
 
-//4.  this is a function that stores an array inside the function but 
+//4.  this is a function that stores an array inside the function and a destination is randomly selected.
 
 var cities = [];
-var randomCities;
 
-function multiDestination() {
+
+function destination() {
 	cities = ["Mexico", "China", "Japan", "South Africa", "Brazil", "Australia", "Croatia", "Cuba"];
 	randomCities = Math.random() * cities.length;
 	randomCities = Math.floor(randomCities);
 	return cities[randomCities];
+	// arguments[0,1,...] is a way to store the values of the arguments via a built in function that works like an array.
 }
-multiDestination();
+destination();
 
+function multiDestination () {
 
+}
 
+function makeSentence(){
+	console.log(arguments[0]);
+
+}
+
+makeSentence("Eduardo");
+makeSentence("Becky");
