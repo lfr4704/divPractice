@@ -1,4 +1,4 @@
-//1.  this is a function that calls for the function below "calculate(action)"
+//1.  fuctions 1 and 2 are for radio buttons. this is a function that calls for the function below "calculate(action)"
 
 function operator() {
 	var selector = document.getElementById("result");
@@ -62,18 +62,37 @@ function destination() {
 	randomCities = Math.random() * cities.length;
 	randomCities = Math.floor(randomCities);
 	return cities[randomCities];
-	// arguments[0,1,...] is a way to store the values of the arguments via a built in function that works like an array.
+	// arguments[0,1,...] is a way to store the values of the arguments via a built in function that works like an array. try to avoid to using this. 
 }
 destination();
 
 function multiDestination () {
 
 }
-
-function makeSentence(){
-	console.log(arguments[0]);
-
+/*
+function createPerson(firstNameString, lastNameString, addressString){
+	var personObject ={
+		firstName: firstNameString,
+		lastName: lastNameString, 
+		address: addressString}
+	
+	return personObject;
 }
 
-makeSentence("Eduardo");
-makeSentence("Becky");
+var myFirstPerson = createPerson("Eguargo", "garcia", "244 mclean ave");
+createPerson("irene", "flores", "mission st.");
+
+console.log(myFirstPerson[0].firstName);
+
+*/
+
+var anotherArray = ["4 feet", "1 tail", "2 eyes"]; // this is just an example to compare how an array looks with an object.
+
+var cat = {legs: 4, tails: 1, eyes: 2, cry: function() {console.log("meow")}, hungry: function(){console.log("feed me, I'm hungry")}} //no semicolon is needed for objects at end
+
+console.log(cat.cry());
+console.log(cat.hungry());
+
+var dog = {ears: 2, heart: 1, lick: function(){console.log("I love you dad")}}
+
+console.log(dog.lick());
